@@ -6,6 +6,10 @@ namespace App\Http\Controllers;
 use App\Models\Task;
 use Illuminate\Http\Request;
 
+/**
+ * Class TaskController
+ * @package App\Http\Controllers
+ */
 class TaskController
 {
     /**
@@ -22,6 +26,10 @@ class TaskController
         return $task;
     }
 
+    /**
+     * @param Task $task
+     * @throws \Exception
+     */
     public function delete(Task $task)
     {
         $task->delete();
